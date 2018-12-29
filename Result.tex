@@ -1,31 +1,31 @@
 \documentclass[a5paper, oneside]{book}
 
-\usepackage[cp1251]{inputenc}   %кодировка
-\usepackage[russian]{babel}   %язык
+\usepackage[utf8]{inputenc}   %РєРѕРґРёСЂРѕРІРєР°
+\usepackage[russian]{babel}   %СЏР·С‹Рє
 \usepackage[T2A]{fontenc}
-\usepackage{wrapfig}  %обтекание
-\usepackage{graphicx}   %графика
-\graphicspath{{OldPictures/}}   %папка с картинками 
+\usepackage{wrapfig}  %РѕР±С‚РµРєР°РЅРёРµ
+\usepackage{graphicx}   %РіСЂР°С„РёРєР°
+\graphicspath{{OldPictures/}}   %РїР°РїРєР° СЃ РєР°СЂС‚РёРЅРєР°РјРё 
 \usepackage{amsmath}
 
-%отступ в первом абзаце
+%РѕС‚СЃС‚СѓРї РІ РїРµСЂРІРѕРј Р°Р±Р·Р°С†Рµ
 \usepackage{indentfirst}   
 
-\usepackage{subcaption}   %несколько фрагментов на рисунке
+\usepackage{subcaption}   %РЅРµСЃРєРѕР»СЊРєРѕ С„СЂР°РіРјРµРЅС‚РѕРІ РЅР° СЂРёСЃСѓРЅРєРµ
 
-\usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry}   %настройка полей
+\usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry}   %РЅР°СЃС‚СЂРѕР№РєР° РїРѕР»РµР№
 
-\headsep=3mm   %расстояние между верхним колонтитулом и текстом
+\headsep=3mm   %СЂР°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ РІРµСЂС…РЅРёРј РєРѕР»РѕРЅС‚РёС‚СѓР»РѕРј Рё С‚РµРєСЃС‚РѕРј
 
 %\oddsidemargin=0pt
 %\setlength{\evensidemargin}{-10.-10mm}
 %\textwidth=10cm
 
-\newcounter{ProbCount}   %счетчик
-\newcommand{\AddProb}{\par\medskip\addtocounter{ProbCount}{1}\textbf{Задача \arabic{ProbCount}.} }   %нумерация задач с помощью счетчика
+\newcounter{ProbCount}   %СЃС‡РµС‚С‡РёРє
+\newcommand{\AddProb}{\par\medskip\addtocounter{ProbCount}{1}\textbf{Р—Р°РґР°С‡Р° \arabic{ProbCount}.} }   %РЅСѓРјРµСЂР°С†РёСЏ Р·Р°РґР°С‡ СЃ РїРѕРјРѕС‰СЊСЋ СЃС‡РµС‚С‡РёРєР°
 
 
-% Чтобы на странице с заглавием главы печаталась колонцифра + отступ в первом абзаце
+% Р§С‚РѕР±С‹ РЅР° СЃС‚СЂР°РЅРёС†Рµ СЃ Р·Р°РіР»Р°РІРёРµРј РіР»Р°РІС‹ РїРµС‡Р°С‚Р°Р»Р°СЃСЊ РєРѕР»РѕРЅС†РёС„СЂР° + РѕС‚СЃС‚СѓРї РІ РїРµСЂРІРѕРј Р°Р±Р·Р°С†Рµ
 %\renewcommand{\chapter}{\cleardoublepage
 %\thispagestyle{empty}%
 %\global\@topnum=0
@@ -36,18 +36,18 @@
 \begin{document}
 
 
-\tableofcontents    % Оглавление
+\tableofcontents    % РћРіР»Р°РІР»РµРЅРёРµ
 
 
-\chapter*{Предисловие}\addcontentsline{toc}{chapter}{Предисловие} 
+\chapter*{РџСЂРµРґРёСЃР»РѕРІРёРµ}\addcontentsline{toc}{chapter}{РџСЂРµРґРёСЃР»РѕРІРёРµ} 
 
 
 \input{Introduction}
 
 
-\part{Задачи факультатива}
+\part{Р—Р°РґР°С‡Рё С„Р°РєСѓР»СЊС‚Р°С‚РёРІР°}
 
-\chapter{Механика}
+\chapter{РњРµС…Р°РЅРёРєР°}
 
 \input{Relativity}
 \input{Angle}
@@ -57,75 +57,75 @@
 \input{MechanicalEnergy}
 \input{RotationDynamics}
 
-\chapter{Молекулярная физика}
+\chapter{РњРѕР»РµРєСѓР»СЏСЂРЅР°СЏ С„РёР·РёРєР°}
 
 \input{GasLawsKineticTheory}
 \input{LawOfConservationOfEnergyAndHeatCapacity}
 
-\chapter{Электричество}
+\chapter{Р­Р»РµРєС‚СЂРёС‡РµСЃС‚РІРѕ}
 
 \input{ElectrostaticsAndCondensers}
 \input{DirectCurrent}
 \input{Electromagnetism}
 
-\chapter{Колебания}
+\chapter{РљРѕР»РµР±Р°РЅРёСЏ}
 
 \input{Oscillations}
 
 
-\part{Чемпионаты по физике для студентов Физфака}
+\part{Р§РµРјРїРёРѕРЅР°С‚С‹ РїРѕ С„РёР·РёРєРµ РґР»СЏ СЃС‚СѓРґРµРЅС‚РѕРІ Р¤РёР·С„Р°РєР°}
 
-\chapter{Студенческий чемпионат по физике 2006 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2006 РіРѕРґР°}
 \input{Championship2006}
 
-\section*{Студенческий чемпионат по физике 2007 года}\addcontentsline{toc}{chapter}{Студенческий чемпионат по физике 2007 года}
+\section*{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2007 РіРѕРґР°}\addcontentsline{toc}{chapter}{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2007 РіРѕРґР°}
 \input{Championship2007}
 
-\chapter{Студенческий чемпионат по физике 2008 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2008 РіРѕРґР°}
 \input{Championship2008}
 
-\chapter{Студенческий чемпионат по физике 2009 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2009 РіРѕРґР°}
 \input{Championship2009}
 
-\chapter{Студенческий чемпионат по физике 2010 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2010 РіРѕРґР°}
 \input{Championship2010}
 
-\chapter{Студенческий чемпионат по физике 2011 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2011 РіРѕРґР°}
 \input{Championship2011}
 
-\chapter{Студенческий чемпионат по физике 2012 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2012 РіРѕРґР°}
 \input{Championship2012}
 
-\chapter{Студенческий чемпионат по физике 2013 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2013 РіРѕРґР°}
 \input{Championship2013}
 
-\chapter{Студенческий чемпионат по физике 2014 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2014 РіРѕРґР°}
 \input{Championship2014}
 
-\chapter{Студенческий чемпионат по физике 2015 года}
+\chapter{РЎС‚СѓРґРµРЅС‡РµСЃРєРёР№ С‡РµРјРїРёРѕРЅР°С‚ РїРѕ С„РёР·РёРєРµ 2015 РіРѕРґР°}
 \input{Championship2015}
 
-\part{Олимпиада "Юные таланты"}
+\part{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹"}
 
-\chapter{Олимпиада "Юные таланты" 2008 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2008 РіРѕРґР°}
 \input{Prodigy2008}
 
-\chapter{Олимпиада "Юные таланты" 2009 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2009 РіРѕРґР°}
 \input{Prodigy2009}
 
-\chapter{Олимпиада "Юные таланты" 2010 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2010 РіРѕРґР°}
 \input{Prodigy2010}
 
-\chapter{Олимпиада "Юные таланты" 2011 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2011 РіРѕРґР°}
 \input{Prodigy2011}
 
-\chapter{Олимпиада "Юные таланты" 2012 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2012 РіРѕРґР°}
 \input{Prodigy2012}
 
-\chapter{Олимпиада "Юные таланты" 2013 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2013 РіРѕРґР°}
 \input{Prodigy2013}
 
-\chapter{Олимпиада "Юные таланты" 2014 года}
+\chapter{РћР»РёРјРїРёР°РґР° "Р®РЅС‹Рµ С‚Р°Р»Р°РЅС‚С‹" 2014 РіРѕРґР°}
 \input{Prodigy2014}
 
 \end{document}
