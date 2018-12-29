@@ -1,0 +1,131 @@
+\documentclass[a5paper, oneside]{book}
+
+\usepackage[cp1251]{inputenc}   %кодировка
+\usepackage[russian]{babel}   %язык
+\usepackage[T2A]{fontenc}
+\usepackage{wrapfig}  %обтекание
+\usepackage{graphicx}   %графика
+\graphicspath{{OldPictures/}}   %папка с картинками 
+\usepackage{amsmath}
+
+%отступ в первом абзаце
+\usepackage{indentfirst}   
+
+\usepackage{subcaption}   %несколько фрагментов на рисунке
+
+\usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry}   %настройка полей
+
+\headsep=3mm   %расстояние между верхним колонтитулом и текстом
+
+%\oddsidemargin=0pt
+%\setlength{\evensidemargin}{-10.-10mm}
+%\textwidth=10cm
+
+\newcounter{ProbCount}   %счетчик
+\newcommand{\AddProb}{\par\medskip\addtocounter{ProbCount}{1}\textbf{Задача \arabic{ProbCount}.} }   %нумерация задач с помощью счетчика
+
+
+% Чтобы на странице с заглавием главы печаталась колонцифра + отступ в первом абзаце
+%\renewcommand{\chapter}{\cleardoublepage
+%\thispagestyle{empty}%
+%\global\@topnum=0
+%\@afterindenttrue
+%\secdef\@chapter\@schapter}
+
+
+\begin{document}
+
+
+\tableofcontents    % Оглавление
+
+
+\chapter*{Предисловие}\addcontentsline{toc}{chapter}{Предисловие} 
+
+
+\input{Introduction}
+
+
+\part{Задачи факультатива}
+
+\chapter{Механика}
+
+\input{Relativity}
+\input{Angle}
+\input{RotationKinematics}
+\input{Dynamics}
+\input{CenterofMass}
+\input{MechanicalEnergy}
+\input{RotationDynamics}
+
+\chapter{Молекулярная физика}
+
+\input{GasLawsKineticTheory}
+\input{LawOfConservationOfEnergyAndHeatCapacity}
+
+\chapter{Электричество}
+
+\input{ElectrostaticsAndCondensers}
+\input{DirectCurrent}
+\input{Electromagnetism}
+
+\chapter{Колебания}
+
+\input{Oscillations}
+
+
+\part{Чемпионаты по физике для студентов Физфака}
+
+\chapter{Студенческий чемпионат по физике 2006 года}
+\input{Championship2006}
+
+\section*{Студенческий чемпионат по физике 2007 года}\addcontentsline{toc}{chapter}{Студенческий чемпионат по физике 2007 года}
+\input{Championship2007}
+
+\chapter{Студенческий чемпионат по физике 2008 года}
+\input{Championship2008}
+
+\chapter{Студенческий чемпионат по физике 2009 года}
+\input{Championship2009}
+
+\chapter{Студенческий чемпионат по физике 2010 года}
+\input{Championship2010}
+
+\chapter{Студенческий чемпионат по физике 2011 года}
+\input{Championship2011}
+
+\chapter{Студенческий чемпионат по физике 2012 года}
+\input{Championship2012}
+
+\chapter{Студенческий чемпионат по физике 2013 года}
+\input{Championship2013}
+
+\chapter{Студенческий чемпионат по физике 2014 года}
+\input{Championship2014}
+
+\chapter{Студенческий чемпионат по физике 2015 года}
+\input{Championship2015}
+
+\part{Олимпиада "Юные таланты"}
+
+\chapter{Олимпиада "Юные таланты" 2008 года}
+\input{Prodigy2008}
+
+\chapter{Олимпиада "Юные таланты" 2009 года}
+\input{Prodigy2009}
+
+\chapter{Олимпиада "Юные таланты" 2010 года}
+\input{Prodigy2010}
+
+\chapter{Олимпиада "Юные таланты" 2011 года}
+\input{Prodigy2011}
+
+\chapter{Олимпиада "Юные таланты" 2012 года}
+\input{Prodigy2012}
+
+\chapter{Олимпиада "Юные таланты" 2013 года}
+\input{Prodigy2013}
+
+\chapter{Олимпиада "Юные таланты" 2014 года}
+\input{Prodigy2014}
+
+\end{document}
