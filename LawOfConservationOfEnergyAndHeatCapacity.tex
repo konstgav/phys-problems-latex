@@ -12,7 +12,7 @@
 \includegraphics[width = 0.9 \textwidth]{0901LawOfConservationOfEnergyTwoPistons.jpg}
 \end{minipage}
 \begin{ans}
-
+$T=T_0+2mv^2/3R$
 \end{ans}
 \end{ex}
 
@@ -23,7 +23,7 @@
 В этот момент легкий поршень движется к тяжелому со скоростью $v_0$, тяжелый поршень покоится. 
 Оцените максимальную скорость тяжелого поршня.
 \begin{ans}
-
+$v = v_0\left( 1 + \sqrt{1+9pV/2mv_0^2} \right)/3$
 \end{ans}
 \end{ex}
 
@@ -32,7 +32,7 @@
 При равновесии поршень делит цилиндр на две равные части и температура газа равна $T_0$. Поршень начали медленно перемещать. 
 Найти температуру газа как функцию отношения $\eta$ объема большей части к объему меньшей части. Показатель адиабаты газа~$\gamma$.
 \begin{ans}
-
+$T=T_0 \left( (\eta + 1)^2/4 \eta \right)^{(\gamma-1)/2}$
 \end{ans}
 \end{ex}
 
@@ -48,7 +48,7 @@
 \includegraphics[width = 0.9 \textwidth]{0904LawOfConservationOfEnergyEfficiency.jpg}
 \end{minipage}
 \begin{ans}
-
+$\eta = \frac{2(T_2-T_1)}{3T_1+5T_2}$
 \end{ans}
 \end{ex}
 
@@ -120,6 +120,7 @@ $C = C_V + R/(1+\alpha)$
 \end{ans}
 \end{ex}
 
+%Черепанов
 \begin{ex}
 Для идеального газа с заданным показателем адиабаты $\gamma$ найдите уравнение процесса (в координатах $V$, $T$), при котором теплоемкость зависит от температуры по закону $C=\alpha T^2$.
 \begin{ans}
@@ -137,7 +138,7 @@ $ V T^{1/(\gamma - 1)} = C e^{\alpha T^2 / 2R}$
 \includegraphics[width = 0.9 \textwidth]{092005HeatCapacityCylinder.jpg}
 \end{minipage}
 \begin{ans}
-
+$T_2/T_1 = (\alpha i)/(\alpha (1+i) - 1)$, $p_2/p_1 = i/(\alpha (1+i) - 1)$
 \end{ans}
 \end{ex}
 
@@ -147,13 +148,13 @@ $ V T^{1/(\gamma - 1)} = C e^{\alpha T^2 / 2R}$
 \begin{tikzpicture}
 	\draw[arrows={-latex}] (0,0) -- (3,0) node[above] {$V$};
 	\draw[arrows={-latex}] (0,0) -- (0,3) node[right] {$p$};
-	%\draw (0,0) circle (2pt)
+	\draw (0.25,2.25) -- (2.25,0.25);
+	\draw[dotted] (0,2.5) -- (2.5,0);
 	\coordinate [label=left:{$p_0$}] (A) at (0,2.5);
 	\coordinate [label=below	:{$V_0$}] (B) at (2.5,0);
-	\draw plot[raw gnuplot, smooth] function{set xrange[0.2:2.3]; plot 2.5-x lt 2};
 \end{tikzpicture}
 \end{center}
 \begin{ans}
-$C(V) = R/(\gamma-1)+R(V_0-2V)/(V_0-V)$
+$C(V) = R/(\gamma-1)+R(V_0-2V)/(V_0-2V)$
 \end{ans}
 \end{ex}

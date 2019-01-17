@@ -7,10 +7,12 @@
 \begin{tikzpicture}
 	\draw[arrows={-latex}] (0,0) -- (3,0) node[above] {$V$};
 	\draw[arrows={-latex}] (0,0) -- (0,3) node[right] {$p$};
+	\draw (0.25,2.25) -- (2.25,0.25);
+	\draw[dotted] (0,2.5) -- (2.5,0);
 	%\draw (0,0) circle (2pt)
 	\coordinate [label=left:{$p_0$}] (A) at (0,2.5);
 	\coordinate [label=below	:{$V_0$}] (B) at (2.5,0);
-	\draw plot[raw gnuplot, smooth] function{set xrange[0.2:2.3]; plot 2.5-x lt 2};
+	%\draw plot[raw gnuplot, smooth] function{set xrange[0.2:2.3]; plot 2.5-x lt 2};
 \end{tikzpicture}
 \end{center}
 \begin{ans}
@@ -57,6 +59,7 @@ $h_1 = h \frac{2p_0+3\rho gh}{2(2p_0 + \rho gh)}$
 \end{ans}
 \end{ex}
 
+%Бутиков
 \begin{ex}
 \hspace{0pt} \\
 \begin{minipage}{.65\textwidth}
@@ -70,6 +73,7 @@ $h_1 = h \frac{2p_0+3\rho gh}{2(2p_0 + \rho gh)}$
 \includegraphics[width = 0.75 \textwidth]{0805GasLawsPiston.jpg}
 \end{minipage}
 \begin{ans}
+$x = a + \sqrt{a^2+1}$, $a = \frac{T (n^2 - 1)}{T_2 2n}$
 \end{ans}
 \end{ex}
 
@@ -90,6 +94,7 @@ $h_1 = h \frac{2p_0+3\rho gh}{2(2p_0 + \rho gh)}$
 \includegraphics[width = 0.9 \textwidth]{0806KineticTheoryTwoVessels.jpg}
 \end{minipage}
 \begin{ans}
+$\Delta M = 2M/15$
 \end{ans}
 \end{ex}
 
@@ -106,21 +111,25 @@ $h_1 = h \frac{2p_0+3\rho gh}{2(2p_0 + \rho gh)}$
 \includegraphics[width = 0.9 \textwidth]{0807KineticTheoryHelium.jpg}
 \end{minipage}
 \begin{ans}
+$T_0 = \sqrt{2}T$, $p_0=p(1+\sqrt{2})2^{-5/4}$
 \end{ans}
 \end{ex}
 
-%Черепанов
+%Ижевск
 \begin{ex}
 Плоская поверхность нагрета неравномерно, так что вдоль нее поддерживается градиент температуры $dT/dx$. 
 В этих условиях газ, примыкающий к поверхности, приходит в движение вдоль поверхности. Это явление называют тепловым скольжением. 
 Объясните его механизм и оцените скорость теплового скольжения. Необходимые параметры считать известными.
 \begin{ans}
+$u \approx \frac{\lambda}{2}\sqrt{\frac{k}{3mT}}\frac{dT}{dx}$
 \end{ans}
 \end{ex}
 
+%Черепанов
 \begin{ex}
 (2008) Оценить по порядку величины установившуюся скорость, с которой будет двигаться в сильно разреженном воздухе плоский диск, одна из сторон которого нагрета до температуры $T_1$, а другая до температуры $T_2$, $T_1>T_2$. Температура воздуха равна $T$.
 \begin{ans}
+$u = \frac{\sqrt{T_2}-\sqrt{T_1}}{\sqrt{T_2}+\sqrt{T_1}+4\sqrt{T}} \sqrt{\frac{3RT}{\mu}}$
 \end{ans}
 \end{ex}
 
@@ -129,5 +138,6 @@ $h_1 = h \frac{2p_0+3\rho gh}{2(2p_0 + \rho gh)}$
 чтобы он мог находиться в устойчивом механическом равновесии? Воздух считать двухатомным газом с относительной молекулярной массой $\mu$. 
 Ускорение свободного падения $g$ не зависит от высоты над поверхностью земли.
 \begin{ans}
+$\mid \frac{dT}{dz} \mid < \frac{2\mu g}{7R}$
 \end{ans}
 \end{ex}
