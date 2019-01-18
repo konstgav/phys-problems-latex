@@ -4,6 +4,7 @@
 \usepackage[russian]{babel}   %язык
 \usepackage{wrapfig}  %обтекание
 \usepackage{graphicx}   %графика
+\usepackage{float}
 \graphicspath{{OldPictures/}}   %папка с картинками 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -11,7 +12,9 @@
 \usepackage{subcaption}   %несколько фрагментов на рисунке
 \usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry} %настройка полей
 \usepackage{answers} %условия, решения и ответы печатаются в разных частях документа
-\usepackage{tikz}
+\usepackage{tikz}  % графика
+\usepackage{circuitikz} % рисунки электических цепей
+
 \headsep=3mm   %расстояние между верхним колонтитулом и текстом
 \Newassociation{sol}{Solution}{solutions}
 \Newassociation{ans}{Answer}{answers}
@@ -50,9 +53,9 @@
 
 \chapter{Электричество}
 \input{ElectrostaticsAndCondensers}
-%\input{DirectCurrent}
+\input{DirectCurrent}
 %\input{Electromagnetism}
-%
+
 %\chapter{Колебания}
 %\input{Oscillations}
 
