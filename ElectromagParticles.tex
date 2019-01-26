@@ -60,6 +60,9 @@ $\vec r \times \vec p - \alpha q \vec r/ r = \text{const} $
 
 \begin{ex}
 Частица c зарядом $q$ и массой $m$ движется с начальной скоростью $v_0$ в вязкой среде в поперечном магнитном поле с индукцией $B$. Сила сопротивления $\vec{F} = -\gamma \vec{v}$, где $\gamma$ - константа. На каком расстоянии от начальной точки частица остановится?
+\begin{sol}
+На частицу действуют сила вязкого трения $\vec{F} = - r\vec{v}$ и сила Лоренца $\vec{F_L} = q \vec{v} \times \vec{B}$, уравнение движения в проекциях на оси, перпендикулярные $\vec{B}$, имеет вид:  $m \dot{v_x}=-rv_x+q v_y B$, $m \dot{v_y}=-rv_y-q v_x B$. Умножим второе из этих уравнений на $i$ и сложим с первым, получим $m\left( \dot{v_x} +i \dot{v_y} \right) = -r(v_x+i v_y) - iqB(v_x+i v_y)$. Обозначим $\phi \equiv v_x+i v_y$, тогда получим для $\phi$ дифференциальное уравнение $\dot{\phi} + \delta \phi + i\omega \phi=0$, где $\delta=r/m$,  $\omega=qB/m$. Решение этого уравнения, удовлетворяющее начальным условиям $v_x(0)=v_0$, $v_y(0)=0$, имеет вид $\phi(t)=v_0 e^{-(\delta +i\omega) t}$. Расстояние от начальной точки до точки, где частица остановится, $L=\sqrt{x_{\infty}^2 + y_{\infty}^2} =\sqrt{ \left( \int_{0}^{\infty}{v_x \, dt} \right)^2 + \left( \int_{0}^{\infty}{v_y \, dt} \right)^2}=\vert \int_{0}^{\infty}{ \phi \, dt} \vert=v_0/\sqrt{\delta^2 +\omega^2}=m v_0/\sqrt{r^2+q^2B^2}$.
+\end{sol}
 \begin{ans}
 $r_{\infty} = mv_0/\sqrt{\gamma^2 + q^2B^2}$
 \end{ans}
