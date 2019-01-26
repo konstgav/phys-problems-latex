@@ -145,14 +145,7 @@ $T_2/T_1 = (\alpha i)/(\alpha (1+i) - 1)$, $p_2/p_1 = i/(\alpha (1+i) - 1)$
 \begin{ex}
 (2001) Вычислить молярную теплоемкость $C(V)$ идеального газа, совершающего процесс, показанный на рисунке. Показатель адиабаты $\gamma$ считать известным.
 \begin{center}
-\begin{tikzpicture}
-	\draw[arrows={-latex}] (0,0) -- (3,0) node[above] {$V$};
-	\draw[arrows={-latex}] (0,0) -- (0,3) node[right] {$p$};
-	\draw (0.25,2.25) -- (2.25,0.25);
-	\draw[dotted] (0,2.5) -- (2.5,0);
-	\coordinate [label=left:{$p_0$}] (A) at (0,2.5);
-	\coordinate [label=below	:{$V_0$}] (B) at (2.5,0);
-\end{tikzpicture}
+\includestandalone{Pictures/082001GasLawsProcess}
 \end{center}
 \begin{ans}
 $C(V) = R/(\gamma-1)+R(V_0-2V)/(V_0-2V)$

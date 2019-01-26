@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (0,0) rectangle (4,0.25);
+	\draw [thick] (0,0) -- (4,0);
+	\draw [very thick] (0.5, 0) node [below=6pt, left]  {$A$} -- (0.5, -3) node [left] {$B$};
+	\draw [very thick] (3.5, 0) node [below=6pt, right]  {$A^{\prime}$} -- (3.5, -3) node [right]  {$B^{\prime}$};
+	%add angle
+\end{tikzpicture}
+\end{document}
