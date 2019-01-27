@@ -2,20 +2,28 @@
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}   %кодировка
 \usepackage[russian]{babel}   %язык
+
+%-----------рисунки-----------
 \usepackage{wrapfig}  %обтекание
 \usepackage{graphicx}   %графика
 \usepackage{float}
-\graphicspath{{OldPictures/}}   %папка с картинками 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{indentfirst} %отступ в первом абзаце
-\usepackage{subcaption}   %несколько фрагментов на рисунке
+\graphicspath{{OldPictures/}}   %папка с картинками
 \usepackage[left=1.5cm,right=1.5cm,bottom=2cm]{geometry} %настройка полей
-\usepackage{answers} %условия, решения и ответы печатаются в разных частях документа
+\usepackage{subcaption}   %несколько фрагментов на рисунке
+
+%--------векторная графика------
 \usepackage{tikz}  % графика
 \usepackage{circuitikz} % рисунки электических цепей
-\usepackage[mathscr]{eucal} % шрифт в формулах для 
 \usepackage{standalone}
+\usetikzlibrary{patterns, angles, quotes}
+
+%-----------формулы-----------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[mathscr]{eucal} % шрифт в формулах для 
+
+\usepackage{indentfirst} %отступ в первом абзаце
+\usepackage{answers} %условия, решения и ответы печатаются в разных частях документа
 
 \headsep=3mm   %расстояние между верхним колонтитулом и текстом
 \Newassociation{sol}{Solution}{solutions}
