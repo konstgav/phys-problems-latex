@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [thick] (0,0) circle (1.2);
+	\draw [very thick] (-0.8484,0.8484) -- (-0.05,-1.4);
+	\draw [fill] (-0.8484,0.8484) circle (0.05);
+	\draw [fill] (0,-1.2) circle (0.1);
+	\draw [arrows={-latex}, thick] (0, 0) -- (1.2, 0) node [above, midway]  {$R$};
+	\draw [thick, ->] (-0.85, 0) arc (-95:-45:0.707) node [above,right] {$\omega$};	
+
+\end{tikzpicture}
+\end{document}
