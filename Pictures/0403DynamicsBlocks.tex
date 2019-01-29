@@ -1,0 +1,20 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (0,-0.25) rectangle (3, 0);	
+	\draw [thick] (0, 0) -- (3, 0);
+
+	\draw [thick] (0.4,0) rectangle (1.6, 0.6);
+	\node at (1, 0.3) {$m_2$};
+
+	\draw [thick] (0.5,0.605) rectangle (1.5, 1.1);
+	\node at (1, 0.85) {$m_1$};
+	
+
+	\draw [arrows={-latex}, thick] (1.5, 0.85) -- (2.7,0.85) node [above, midway]  {$\vec{F}$};
+	
+\end{tikzpicture}
+\end{document}
