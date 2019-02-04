@@ -240,3 +240,6 @@ TSWLatexianTemp*
 
 # generated if using elsarticle.cls
 *.spl
+answersFile.tex
+solutionsFile.tex
+.DS_Store

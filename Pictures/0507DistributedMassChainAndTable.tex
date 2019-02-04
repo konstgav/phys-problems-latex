@@ -1,0 +1,15 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,decorations.shapes}
+ 
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (0,-0.25) rectangle (3, 0);	
+	\draw [thick] (0, 0) -- (3, 0);
+
+	\draw [decorate,decoration={ shape backgrounds, shape=circle, shape size=2pt,shape sep=2pt}] (2.3,1pt) -- (1.2,1pt) -- (1.2, 2);
+		\draw [arrows={latex-latex}] (0.5, 0) -- (0.5, 2) node [midway, left]  {$x$};
+		\draw (0.3, 2) -- (1.4,2);
+
+\end{tikzpicture}
+\end{document}

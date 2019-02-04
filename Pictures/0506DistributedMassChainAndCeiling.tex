@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,decorations.shapes}
+ 
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (-0.25, 0.25) rectangle (3.25, 0);
+	\draw [thick] (-0.25,0) -- (3.25,0);	
+	\draw [decorate,decoration={ shape backgrounds, shape=circle, shape size=2pt,shape sep=2pt}] (0.01, -0.01) arc (190:350:1.52);
+	\draw (-0.01,0)--(-0.01,-1);
+	\draw (3.02,0)--(3.02,-1);
+	\draw (0, -0.6) arc (-90:-78:1) node [left=2pt, below=2pt] {$\alpha$};
+	\draw (3.02, -0.6) arc (-90:-102:1) node [below=2pt] {$\alpha$};
+	\draw [arrows={latex-latex}] (1.5, 0) -- (1.5, -1.27) node [midway, right]  {$h$};
+\end{tikzpicture}
+\end{document}
