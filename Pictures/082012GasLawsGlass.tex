@@ -1,0 +1,18 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes}
+ 
+\begin{document}
+\begin{tikzpicture}
+
+	\draw (0,0) -- (1,0);
+	\draw (2,0) -- (3,0);
+	\draw [thick] (1.5,1) ellipse (0.5 and 0.1);
+	\draw [thick] (1,-1) arc (230:310:0.785);
+	\draw [thick] (1, -1) -- (1,1);
+	\draw [thick] (2, -1) -- (2,1);
+	\draw [arrows={latex-latex}] (2.3, -1) -- (2.3, 0) node [midway, right]  {$h_1$};
+	\draw (2,-1) -- (2.6,-1);
+	\node at (0.5, -0.5) {$\rho$};
+\end{tikzpicture}
+\end{document}

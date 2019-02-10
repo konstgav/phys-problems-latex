@@ -1,0 +1,20 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes}
+ 
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [fill, color=gray] (2.2,0) rectangle (2.4,-2);
+	\draw [fill] (3.3,0) rectangle (3.5,-2);
+	\node at (2.3,0.2) {$-$};
+	\node at (3.4,0.2) {$+$};
+	\node at (2,-1) {$S$};
+	\draw (2.4,-2) -- (2.4,-2.4);
+	\draw (3.3,-2) -- (3.3,-2.4);
+	\draw [draw=none, pattern=dots] (2.4,0) rectangle (3.3,-2);
+	\draw [arrows={latex-latex}] (3.3,-2.2) -- (2.4,-2.2) node [midway, below] {$d$};
+	\draw [thick] (0, 0) rectangle (3.5,-2);
+
+\end{tikzpicture}
+\end{document}

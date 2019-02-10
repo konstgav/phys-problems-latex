@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (3, 0) rectangle (0, -0.25);
+	\draw [thick] (0.4,0) rectangle (2.6,0.2);
+	\node at (0.6,0.4) {$M$};
+	\draw [very thick] (1.5,0.2) -- (1.5, 2) -- (2.3, 2);
+	\draw [thick] (0,0) -- (3,0);
+	\draw (2.3,2) -- (2.3,0.8) node [midway, right] {$l$};
+	\draw [fill] (2.3,0.8) circle (0.1) node [right] {$m$};	
+	\draw [arrows={-latex}, thick] (0.2,1.4) -- (1.1, 1.4) node [midway, above]  {$\vec{v}_0$};
+\end{tikzpicture}
+\end{document}
