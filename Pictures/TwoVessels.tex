@@ -1,0 +1,14 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes}
+ 
+\begin{document}
+\begin{tikzpicture}
+	\draw [thick] (0,0) -- (0,2.5) -- (1,2.5) -- (1,0.2) -- (2,0.2) -- (2, 2.5) -- (3.5, 2.5) -- (3.5, 0) -- (3.5, 0) -- cycle;
+	\draw [thick, pattern=north east lines] (0, 0.8) rectangle (1, 1.1) node [left=35pt, above=-11pt] {$m_1$};
+	\draw [thick, pattern=north east lines] (2, 0.8) rectangle (3.5,1.1) node [right=8pt, above=-11pt] {$m_2$};
+	\draw (0, 0) -- (-0.7, 0);
+	\draw (0, 0.8) -- (-0.7, 0.8);
+	\draw [arrows={latex-latex}] (-0.3,0) -- (-0.3,0.8) node [midway, left] {$h$};
+\end{tikzpicture}
+\end{document}
