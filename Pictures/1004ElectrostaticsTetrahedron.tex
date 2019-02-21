@@ -1,0 +1,17 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes}
+ 
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [thick] (0,0) -- (3,0) -- (1,-1.5) -- cycle;
+	\draw [thick] (0,0) -- (1.333,1.2) -- (3,0) node [midway, above] {$a$};
+	\draw [thick] (1.333,1.2) -- (1,-1.5);
+	\draw [dashed] (0.5,-0.75) -- (3,0);
+	\draw [dashed] (0,0) -- (2,-0.75);
+	\draw [dashed] (1.333,-0.5) -- (1.333,1.2);
+	\draw [fill] (1.333,-0.075) circle (0.04) node [right=3pt,below] {$q$};
+	
+\end{tikzpicture}
+\end{document}

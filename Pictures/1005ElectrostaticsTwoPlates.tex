@@ -1,0 +1,19 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes}
+ 
+\begin{document}
+\begin{tikzpicture}
+
+	\draw [thick, arrows={-latex}] (0,0) -- (3,0);
+	\draw [thick] (0.1,0.05) -- (0.1,-.05) node [midway, below] {$0$};
+	\draw [thick] (0.6,0.05) -- (0.6,-.05) node [midway, below] {$x$};
+	\draw [thick] (1.4,0.05) -- (1.4,-.05) node [midway, below] {$x_1$};
+	\draw [thick] (2,0.05) -- (2,-.05) node [midway, below] {$d$};
+	\draw [thick] (0.1, 0.2) -- (0.1, 1.5) node [midway, left] {$1$};
+	\draw [thick] (2, 0.2) -- (2, 1.5) node [midway, right] {$2$};
+	\draw [thick] (0.6, 0.2) -- (0.6, 1.5) node [midway, left] {$q$};
+	\draw [dashed] (1.4, 0.2) -- (1.4, 1.5);
+	\draw (2, 1.45) arc (45:135:1.35) node [midway, above] {$-q$};
+\end{tikzpicture}
+\end{document}
