@@ -1,0 +1,11 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[european]
+	\draw (0,0) node [left=6pt,above] {$A$} to [R, *-*] (3,0) to [R, -*] (3,3) to [R, -*] (0,3) to [R] (0,0)
+	(0,0) to [R, -*] (1.5,1.5) node [below=3pt] {$B$} to [R] (3,3) 
+	(0,3) to [R] (1.5,1.5) to [R] (3,0); 
+\end{tikzpicture}
+\end{document}

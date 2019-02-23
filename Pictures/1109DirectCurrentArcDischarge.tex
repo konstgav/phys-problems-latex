@@ -1,0 +1,27 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}   %кодировка
+\usepackage[russian]{babel}   %язык
+
+\begin{document}
+\begin{tikzpicture}
+	\draw[thick, arrows={-latex}] (0,0) -- (2.5,0) node[above] {$U$, В};
+	\draw[thick, arrows={-latex}] (0,0) -- (0,2.5) node[right] {$I$, А};
+	\draw[step=0.25, very thin] (0,0) grid (2,2);
+	\node at (0,0) [below] {0};
+	\node at (1,0) [below] {10};
+	\node at (2,0) [below] {20};
+	\node at (0,0) [left] {50};
+	\node at (0,1) [left] {70};
+	\node at (0,2) [left] {90};
+	\draw [thick] (0,-0.05) -- (0,0);
+	\draw [thick] (1,-0.05) -- (1,0);
+	\draw [thick] (2,-0.05) -- (2,0);
+	\draw [thick] (-0.05,0) -- (0,0);
+	\draw [thick] (-0.05,1) -- (0,1);
+	\draw [thick] (-0.05,2) -- (0,2);
+	\draw [thick] plot[ variable=\t, domain=0.125:2, samples=50] ({\t},{3*exp(-5*\t)+0.4});
+
+\end{tikzpicture}
+\end{document}

@@ -1,22 +1,13 @@
 \section{Постоянный электрический ток}
 
 \begin{ex}
-Найти сопротивление цепи между точками $A$ и $B$. Сопротивление каждого резистора известно и равно $R$.
+Найти сопротивления приведенных цепей между точками $A$ и $B$. Сопротивление каждого резистора известно и равно $R$.
 \begin{center}
-\begin{tikzpicture}[european]
-	\draw (-0.5,0) to [short, o-] (0,0) to [R=$R$] (2,0) to [R=$R$] (4,0) to [R=$R$] (6,0) to [short, -o] (6.5,0) 
-	(0,0) to [short, *-] (0,1) -- (4,1) to [short, -*]  (4,0)
-	(2,0) to [short, *-] (2,-1) -- (6,-1) to  [short, -*] (6,0)
-	(-0.5,0.25) node[]{$A$}
-	(6.5,0.25) node[]{$B$};
-\end{tikzpicture}
+\includestandalone[scale=0.5]{Pictures/1101DirectCurrentABCircuitLine}
+\includestandalone[scale=0.5]{Pictures/1101DirectCurrentABCircuitCube}
+\includestandalone[scale=0.5]{Pictures/1101DirectCurrentABCircuitSquare}
+\includestandalone[scale=0.5]{Pictures/1101DirectCurrentABCircuitStar}
 \end{center}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.5]{1101DirectCurrentABCircuitCube.jpg}
-\includegraphics[scale=1]{1101DirectCurrentABCircuitStar.jpg}
-\includegraphics[scale=0.5]{1101DirectCurrentABCircuitSquare.jpg}
-\end{figure}
 \begin{ans}
 $R/3$, $5R/6$, $6R/7$, $7R/15$
 \end{ans}
@@ -26,16 +17,11 @@ $R/3$, $5R/6$, $6R/7$, $7R/15$
 \hspace{0pt} \\
 \begin{minipage}{.65\textwidth}
 Сопротивления резисторов $R_1 = 1$ Ом, $R_2 = 2$ Ом, $R_3 = 3$ Ом, $R_4 =4$ Ом. 
-Напряжение источника тока $U = 1$ В. Найдите ток, который течет через перемычку.
+Напряжение источника тока $U = 1$ В. Найдите ток, который течет через вертикальную перемычку.
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\begin{tikzpicture}[european, scale=0.9]
-	\draw (1.5,0) to [short, o-] (0,0) -- (0,-2) to [R=$R_3$] (2,-2) to [R=$R_4$] (4,-2) -- (4,0)  to [short, -o] (2.5,0)
-	(0,-1) to [R=$R_1$, *-] (2,-1) to [R=$R_2$] (4,-1) to [short, -*] (4,-1)
-	(2,-1) to [short, *-*] (2,-2)
-	(2,0) node[]{$U$};
-\end{tikzpicture}
+\includestandalone[width = 0.8 \textwidth]{Pictures/1102DirectCurrentFourResistors}
 \end{minipage}
 \begin{ans}
 $I = 2/21$ А
@@ -51,7 +37,7 @@ $I = 2/21$ А
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\includegraphics[width = 0.8 \textwidth]{1103DirectCurrentThreeRings.jpg}
+\includestandalone[width = 0.75 \textwidth]{Pictures/1103DirectCurrentThreeRings}
 \end{minipage}
 \begin{ans}
 $R = \rho r /16d^2$
@@ -60,10 +46,9 @@ $R = \rho r /16d^2$
 
 \begin{ex}
 Найдите эквивалентное сопротивление между точками $A$ и $B$ бесконечной цепочки, которая состоит из одинаковых резисторов сопротивлением $R$ каждый.
-\begin{figure}[H]
+
 \centering
-\includegraphics[scale=0.5]{1104DirectCurrentFourInfiniteCircuitAB.jpg}
-\end{figure}
+\includestandalone{Pictures/1104DirectCurrentFourInfiniteCircuitAB}
 \begin{ans}
 $(6-\sqrt{3})R/6$
 \end{ans}
@@ -76,7 +61,7 @@ $(6-\sqrt{3})R/6$
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\includegraphics[width = 0.8 \textwidth]{1105DirectCurrentNet.jpg}
+\includestandalone[scale = 0.7]{Pictures/1105DirectCurrentNet}
 \end{minipage}
 \begin{ans}
 $R$
@@ -106,7 +91,7 @@ $t_1 = 6$ мин, $t_2 = 25$ мин
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\includegraphics[width = 0.9 \textwidth]{1108DirectCurrentVDR.jpg}
+\includestandalone[width = 0.95 \textwidth]{Pictures/1108DirectCurrentVDR}
 \end{minipage}
 \begin{ans}
 $I = 0,06$ А
@@ -121,7 +106,7 @@ $I = 0,06$ А
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\includegraphics[width = 0.9 \textwidth]{1109DirectCurrentArcDischarge.jpg}
+\includestandalone[width = 0.85 \textwidth]{Pictures/1109DirectCurrentArcDischarge}
 \end{minipage}
 \begin{ans}
 $R = 5$ Ом
@@ -135,12 +120,7 @@ $R = 5$ Ом
 \end{minipage}
 \begin{minipage}{.35\textwidth}
 \centering
-\begin{tikzpicture}[european, scale=0.9]
-	\draw (1.5,0) to [short, o-] (0,0) -- (0,-3) to [R, l=$R_3$] (2,-3) to [thR, l=$R_4$] (4,-3) -- (4,0)  to [short, -o] (2.5,0)
-	(0,-1) to [thR, l=$R_1$, *-] (2,-1) to [R, l=$R_2$] (4,-1) to [short, -*] (4,-1)
-	(2,-1) to [ammeter, *-*] (2,-3)
-	(2,0) node[]{$U_0$};
-\end{tikzpicture}
+\includestandalone[width = 0.9 \textwidth]{Pictures/1110DirectCurrentResistorsAndGalvanometor}
 \end{minipage}
 \begin{ans}
 $U_0 = 2R^2/\alpha$

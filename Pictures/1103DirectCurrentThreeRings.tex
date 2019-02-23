@@ -1,0 +1,17 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [thick] (0,0) circle (1.5);
+	\draw [thick] (0,0) ellipse (1.5 and 0.5);
+	\draw [thick] (0,0) ellipse (0.5 and 1.5);
+	\draw [fill] (1.5,0) circle (0.05);
+	\draw [fill] (-1.5,0) circle (0.05);
+	\draw [fill] (0.465,0.465) circle (0.05);
+	\draw [fill] (-0.465,-0.465) circle (0.05);
+	\draw [fill] (0,1.5) circle (0.05) node [below] {$A$};
+	\draw [fill] (0,-1.5) circle (0.05) node [above] {$B$};
+\end{tikzpicture}
+\end{document}
