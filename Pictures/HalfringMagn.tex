@@ -1,0 +1,13 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [very thick] (0,0) arc(180:360:1.5);
+	\draw [arrows={-latex}] (1.5,0) -- (1.5,-1.5) node [midway, left] {$R$};
+	\node at (1.5,0) [left] {$O$};
+	\draw [fill] (1.5, 0) circle (0.02);
+\end{tikzpicture}
+\end{document}
