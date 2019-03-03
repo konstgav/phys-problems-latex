@@ -1,7 +1,9 @@
 \documentclass[a5paper, oneside]{book}
+
+%------кодировка и язык-------
 \usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}   %кодировка
-\usepackage[russian]{babel}   %язык
+\usepackage[utf8]{inputenc}  
+\usepackage[russian]{babel}
 
 %-----------рисунки-----------
 \usepackage{wrapfig}  %обтекание
@@ -25,6 +27,11 @@
 \usepackage{indentfirst} %отступ в первом абзаце
 \usepackage{answers} %условия, решения и ответы печатаются в разных частях документа
 
+%------Формат заголовков глав---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\normalfont\huge\bfseries}{}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{10pt}{40pt}
+
 \headsep=3mm   %расстояние между верхним колонтитулом и текстом
 \Newassociation{sol}{Solution}{solutions}
 \Newassociation{ans}{Answer}{answers}
@@ -32,8 +39,13 @@
 \newtheorem{Exc}{Задача}
 \newenvironment{ex}{\begin{Exc}\normalfont}{\end{Exc}}
 
+\renewcommand{\chaptermark}[1]{\markright{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+
 \title{Сборник задач для подготовки к физическим олимпиадам}
+\author{К.А. Гаврилов, А.С. Маякина}
 \date{\today}
+%\subject{Учебное пособие}
 
 \DeclareMathOperator{\arccosh}{arcosh}
 
@@ -79,11 +91,12 @@
 %\chapter{Решения}
 %\Readsolutionfile{solutions}
 
-\chapter{Ответы}
+\pagestyle{empty}
+\chapter*{Ответы}\addcontentsline{toc}{chapter}{Ответы}
 \Readsolutionfile{answers}
 
-\chapter{Литература}
-%TODO библиография
+\chapter*{Литература}\addcontentsline{toc}{chapter}{Литература}
+\input{bibliography}
 
 %\part{Чемпионаты по физике для студентов Физфака}
 %
