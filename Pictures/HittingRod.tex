@@ -1,0 +1,17 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,angles}
+
+\begin{document}
+\begin{tikzpicture}
+	\draw [draw=none, pattern=north east lines] (-0.3,-0.2) rectangle (3.3,-0.4);
+	\draw [thick] (-0.3,-0.2) -- (3.3,-0.2);
+	\draw [thick] (0.15, 0) rectangle (2.85, 0.2);
+	\draw [thick] (0.2,-0.015) -- (0.3, -0.2) -- (0.1, -0.2) -- cycle;
+	\draw [fill] (0.2,0) circle (0.03);
+	\draw [thick] (2.8,-0.015) -- (2.9, -0.2) -- (2.7, -0.2) -- cycle;
+	\node at (1.5,0.35) {$m, L$};
+	\node at (-0.1,0.1) {$O$};
+	\node at (3.1,0.1) {$A$};
+\end{tikzpicture}
+\end{document}

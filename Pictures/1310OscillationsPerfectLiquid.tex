@@ -1,0 +1,19 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,angles}
+ 
+\begin{document}
+\begin{tikzpicture}
+	%\draw [thick] (0,1) -- (0,0) arc (180:360:1) (2,0) -- (2,1);
+	%\draw [thick] (0.3,1) -- (0.3,0) arc (180:360:0.7) (1.7,0) -- (1.7,1);	
+	\draw (0,1) -- (0,0) arc (180:360:1) -- (2,1) -- (1.7,1) -- (1.7,0) arc (360:180:0.7) -- (0.3,1) -- cycle;	
+	\draw [arrows={-latex}] (2.5, 0.8)--(2.5, -0.4) node [midway, right] {$\vec{g}$};
+    \clip (0,1) -- (0,0) arc (180:360:1) -- (2,1) -- (1.7,1) -- (1.7,0) arc (360:180:0.7) -- (0.3,1) -- cycle;	
+	;
+    \foreach \n [count=\k from 1] in {0,1,...,10}
+    {
+	    \draw[line width = 0.5pt,dash pattern = on 4pt off 2pt on 4pt off 2pt](0,-1+0.15*\k ) -- ++ (2,0);
+	    \draw[line width = 0.5pt,dash pattern = on 4pt off 2pt on 4pt off 2pt](0.1,-1.075+0.15*\k ) -- ++ (2,0);
+	}
+\end{tikzpicture}
+\end{document}

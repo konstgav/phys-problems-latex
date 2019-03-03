@@ -1,0 +1,10 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[european]
+	\draw (0,0) to [capacitor, l=$C$, *-*] (5,0) to [capacitor, l=$C$, -*] (2.5,3.3) to [capacitor, l=$C$] (0,0) to [american inductor,l =$L$, -*] (2.5, 1.1) to [american inductor,l =$L$] (5, 0) (2.5, 1.1) to [american inductor,l =$L$] (2.5, 3.3);
+\end{tikzpicture}
+\end{document}

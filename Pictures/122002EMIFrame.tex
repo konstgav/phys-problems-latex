@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[european]
+	\draw [thick, arrows={-latex}] (0,0) -- (0,2) node [left] {$I$};
+	\draw [thick] (0,1.5) -- (0,3);
+	\draw [thick] (1, 1.2) rectangle (3,2.3);
+	\draw [arrows={latex-latex}] (0,1.5) -- (1,1.5) node [midway, above] {$L$};
+	\node at (2,1.0) {$a$};
+	\node at (2.8,1.75) {$b$};
+	\node at (2,2.5) {$R$};
+\end{tikzpicture}
+\end{document}

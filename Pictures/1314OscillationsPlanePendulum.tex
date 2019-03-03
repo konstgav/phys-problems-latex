@@ -1,0 +1,14 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,angles}
+ 
+\begin{document}
+\begin{tikzpicture}
+	\draw [thick] (0,0) -- (2,0);
+	\draw [thick] (0.7,0) -- (1.5,-1) node [midway, above, right] {$L$};
+	\draw [fill] (0.7,0) circle (0.1)  node [above=1pt] {$M$};
+	\draw [fill] (1.5,-1) node [above, right] {$m$} circle (0.07);
+	\draw [arrows={-latex}] (2.5,-0.1) -- (2.5,-0.8) node [midway, right] {$\vec{g}$};
+
+\end{tikzpicture}
+\end{document}

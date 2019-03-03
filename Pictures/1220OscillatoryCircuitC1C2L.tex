@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[european]
+	\draw (0,0) to [short,-*] (1.25,0) to [capacitor, l=$C_2$] (1.25, -2) to [short,*-] (0,-2) (0,0) to [capacitor, l=$C_1$] (0,-1) to [switch] (0,-2)  (1.25,0) -- (2.5,0) to [american inductor,l =$L$] (2.5, -2) -- (1.25,-2);
+	\node at (0.5,-1.5) {$K$};
+\end{tikzpicture}
+\end{document}

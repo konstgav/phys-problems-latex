@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns, angles}
+\usepackage{circuitikz}
+
+\begin{document}
+\begin{tikzpicture}[european]
+	\draw (0,0) to [capacitor, l=$C$] (1.25,0) to [capacitor, l=$C$] (2.5,0) to [switch] (2.5,-1.5) to [american inductor,l =$L$] (0, -1.5) -- (0,0);
+	\draw [arrows={latex-}] (0,0.1) -- (0,1);
+	\draw [arrows={latex-}] (2.5,0.1) -- (2.5,1);
+	\draw (0,1) to [short,-o] (1,1) (1.5,1) to [short,o-] (2.5,1);
+	\node at (1.25,1) {$U$};
+	\node at (2.7,-1.1) {$K$};
+\end{tikzpicture}
+\end{document}

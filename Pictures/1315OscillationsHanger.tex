@@ -1,0 +1,23 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{patterns,snakes,angles}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}   %кодировка
+\usepackage[russian]{babel}   %язык
+
+\begin{document}
+\begin{tikzpicture}
+\draw [thick] (0,0) -- (1,0.8) -- (2,0) --cycle;
+\draw [fill] (1,0.75) circle (0.03);
+\draw (0,0) -- (0,-0.5) (2,0)--(2,-0.5) (2,0)--(2.3,0) (1,0.8)--(2.3,0.8);
+\draw [arrows={latex-latex}] (0,-0.4)--(2,-0.4) node [midway, above] {$R=42$ см};
+\draw [arrows={latex-latex}] (2.2,0)--(2.2,0.8) node [midway, right] {$l=10$ см}; 
+\node at (1,-1) {а)};
+\draw [thick] (4,0.8) -- (6,0.8) -- (5,0) --cycle;
+\draw [fill] (5,0.75) circle (0.03);
+\node at (5,-1) {б)};
+\draw [thick] (6.1+1,-1.16) -- (6.5+1,0.8) -- (7.084+1,-0.34) --cycle;
+\draw [fill] (6.515+1,0.70) circle (0.03);
+\node at (7+1,-1) {в)};
+\end{tikzpicture}
+\end{document}
