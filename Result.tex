@@ -25,27 +25,29 @@
 \usepackage[mathscr]{eucal} % шрифт в формулах для 
 
 \usepackage{indentfirst} %отступ в первом абзаце
-\usepackage{answers} %условия, решения и ответы печатаются в разных частях документа
 
 %------Формат заголовков глав---
 \usepackage{titlesec}
 \titleformat{\chapter}[display]{\normalfont\huge\bfseries}{}{0pt}{\Huge}
 \titlespacing*{\chapter}{0pt}{10pt}{40pt}
+%\renewcommand{\chaptermark}[1]{\markright{\thechapter.\ #1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
 
 \headsep=3mm   %расстояние между верхним колонтитулом и текстом
+
+%----Условия, решения и ответы печатаются в разных частях документа---
+\usepackage{answers} 
 \Newassociation{sol}{Solution}{solutions}
 \Newassociation{ans}{Answer}{answers}
 \renewcommand{\Solutionlabel}[1]{\bf{Решение #1}}
 \newtheorem{Exc}{Задача}
 \newenvironment{ex}{\begin{Exc}\normalfont}{\end{Exc}}
 
-\renewcommand{\chaptermark}[1]{\markright{\thechapter.\ #1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}{}}
+\pagestyle{plain}
 
 \title{Сборник задач для подготовки к физическим олимпиадам}
 \author{К.А. Гаврилов, А.С. Маякина}
 \date{\today}
-%\subject{Учебное пособие}
 
 \DeclareMathOperator{\arccosh}{arcosh}
 
@@ -92,7 +94,6 @@
 %\chapter{Решения}
 %\Readsolutionfile{solutions}
 
-\pagestyle{empty}
 \chapter*{Ответы}\addcontentsline{toc}{chapter}{Ответы}
 \Readsolutionfile{answers}
 
